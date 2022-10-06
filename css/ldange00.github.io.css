@@ -107,6 +107,7 @@ p {
   margin-top: 0.5vw;
 }
 
-a {
+a,
+img {
   height: inherit;
 }
