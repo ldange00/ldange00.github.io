@@ -61,6 +61,49 @@
           animation: rise 0.3s ease-out forwards;
 }
 
+.light {
+  --text-primary: #1E1E1E;
+  --text-link: #00B0F0;
+  --text-invert: #1E1E1E;
+  --background-primary: #F4F4F4;
+  --scrollbar-bg: transparent;
+  --scrollbar-color: rgba(0, 0, 0, 0.25);
+  color-scheme: light;
+}
+
+.dark {
+  --text-primary: #F4F4F4;
+  --text-link: #00B0F0;
+  --text-invert: #F4F4F4;
+  --background-primary: #1E1E1E;
+  --scrollbar-bg: transparent;
+  --scrollbar-color: rgba(255, 255, 255, 0.25);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not(.light):not(.dark) {
+    --text-primary: #1E1E1E;
+    --text-link: #00B0F0;
+    --text-invert: #1E1E1E;
+    --background-primary: #F4F4F4;
+    --scrollbar-bg: transparent;
+    --scrollbar-color: rgba(0, 0, 0, 0.25);
+    color-scheme: light;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root:not(.light):not(.dark) {
+    --text-primary: #F4F4F4;
+    --text-link: #00B0F0;
+    --text-invert: #F4F4F4;
+    --background-primary: #1E1E1E;
+    --scrollbar-bg: transparent;
+    --scrollbar-color: rgba(255, 255, 255, 0.25);
+    color-scheme: dark;
+  }
+}
+
 * {
   margin: 0;
   border: 0;
@@ -90,9 +133,10 @@ nav.icons {
 
 body {
   margin: 0 10%;
-  background: #F4F4F4;
-  color: #1E1E1E;
+  cursor: default;
   font: 400 16px "Source Sans Pro";
+  background-color: var(--background-primary);
+  color: var(--text-primary);
 }
 
 h1 {
