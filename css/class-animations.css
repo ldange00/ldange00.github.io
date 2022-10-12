@@ -8,17 +8,11 @@
     opacity: 0;
   }
 }
-.fade-in {
-  -webkit-animation: fade-in 2.7s;
-          animation: fade-in 2.7s;
-}
-
 @-webkit-keyframes rise {
   to {
     transform: translateY(-0.3em);
   }
 }
-
 @keyframes rise {
   to {
     transform: translateY(-0.3em);
@@ -34,6 +28,11 @@
     transform: translateY(-0.3em);
   }
 }
+.fade-in {
+  -webkit-animation: fade-in 2.7s;
+          animation: fade-in 2.7s;
+}
+
 .rise-and-fall :not(:hover) {
   -webkit-animation: fall 0.5s ease-in;
           animation: fall 0.5s ease-in;
