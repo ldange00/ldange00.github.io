@@ -1,32 +1,19 @@
-section#main-content {
-  align-self: center;
-  text-align: center;
-}
-section#footer {
-  margin-bottom: 0.5em;
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-div,
-nav {
+body {
   display: flex;
-  flex-wrap: wrap;
-}
-div.column,
-nav.column {
   flex-direction: column;
-}
-
-nav.icons {
-  align-items: center;
-  height: 48px;
-  gap: 2.5em;
-}
-nav.icons#contacts {
-  justify-content: center;
-  margin-top: 3em;
-}
-nav.icons#credits {
-  justify-content: flex-end;
+  height: 100vh;
+  margin: 0 1em;
+  cursor: default;
+  font: 400 16px "Source Sans Pro";
+  background-color: var(--background-primary);
+  color: var(--text-primary);
 }
 
 .full-h {
@@ -37,29 +24,39 @@ nav.icons#credits {
   margin: auto;
 }
 
-* {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  text-decoration: none;
+div,
+nav {
+  display: flex;
+}
+div.solo,
+nav.solo {
+  justify-content: center;
+}
+div .cell,
+nav .cell {
+  flex-direction: column;
+}
+div .cell.centerX,
+nav .cell.centerX {
+  align-items: center;
 }
 
-body {
-  margin: 0 1em;
-  cursor: default;
-  font: 400 16px "Source Sans Pro";
-  background-color: var(--background-primary);
-  color: var(--text-primary);
+nav {
+  height: 64px;
+  gap: 2em;
+}
+nav#contact {
+  margin-top: 3em;
 }
 
 h1 {
-  font: 900 5em "Source Sans Pro";
+  font-size: 5em;
   letter-spacing: -0.025em;
   margin-bottom: 0.5vw;
 }
 
 p {
-  font: 1.5em "Source Sans Pro";
+  font-size: 1.5em;
   letter-spacing: 0.025em;
 }
 p.sub {
