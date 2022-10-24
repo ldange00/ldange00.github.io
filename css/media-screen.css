@@ -1,0 +1,22 @@
+@media screen and (orientation: portrait) {
+  h1 {
+    font-size: 7vw;
+  }
+  p {
+    font-size: 3.25vw;
+  }
+  nav.icon {
+    margin-top: 7vw;
+  }
+}
+@media screen and (orientation: landscape) {
+  h1 {
+    font-size: 5vh;
+  }
+  p {
+    font-size: 2vh;
+  }
+  nav.icon {
+    margin-top: 4vh;
+  }
+}

@@ -16,47 +16,40 @@ body {
   color: var(--text-primary);
 }
 
-.full-h {
-  height: 100vh;
-}
-
 .empty {
   margin: auto;
+}
+
+.full-h {
+  height: 100vh;
 }
 
 div,
 nav {
   display: flex;
-}
-div.solo,
-nav.solo {
+  flex-wrap: wrap;
   justify-content: center;
 }
-div .cell,
-nav .cell {
+div.cell,
+nav.cell {
   flex-direction: column;
 }
-div .cell.centerX,
-nav .cell.centerX {
-  align-items: center;
+div.cell.tx-c,
+nav.cell.tx-c {
+  text-align: center;
 }
 
-nav {
+nav.icon {
   height: 64px;
   gap: 2em;
 }
-nav#contact {
-  margin-top: 3em;
-}
 
 h1 {
-  font-size: 5em;
   letter-spacing: -0.025em;
   margin-bottom: 0.5vw;
 }
 
 p {
-  font-size: 1.5em;
   letter-spacing: 0.025em;
 }
 p.sub {
