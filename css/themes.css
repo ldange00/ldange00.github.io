@@ -1,44 +1,44 @@
 .light {
-  --text-primary: #1E1E1E;
-  --text-inactive: #383838;
-  --text-link: #00B0F0;
-  --text-invert: #F4F4F4;
-  --background-primary: #F4F4F4;
+  --text-primary: #1e1e1e;
+  --text-inactive: #5e5e5e;
+  --text-link: #00b0f0;
+  --text-invert: #f4f4f4;
+  --background-primary: #f4f4f4;
   --scrollbar-bg: transparent;
   --scrollbar-color: rgba(0, 0, 0, 0.25);
   color-scheme: light;
 }
 
 .dark {
-  --text-primary: #F4F4F4;
-  --text-inactive: #dbdbdb;
-  --text-link: #00B0F0;
-  --text-invert: #1E1E1E;
-  --background-primary: #1E1E1E;
+  --text-primary: #f4f4f4;
+  --text-inactive: #b4b4b4;
+  --text-link: #00b0f0;
+  --text-invert: #1e1e1e;
+  --background-primary: #1e1e1e;
   --scrollbar-bg: transparent;
   --scrollbar-color: rgba(255, 255, 255, 0.25);
   color-scheme: dark;
 }
 
 @media (prefers-color-scheme: light) {
-  :root:not(.light):not(.dark) {
-    --text-primary: #1E1E1E;
-    --text-inactive: #383838;
-    --text-link: #00B0F0;
-    --text-invert: #F4F4F4;
-    --background-primary: #F4F4F4;
+  :root {
+    --text-primary: #1e1e1e;
+    --text-inactive: #5e5e5e;
+    --text-link: #00b0f0;
+    --text-invert: #f4f4f4;
+    --background-primary: #f4f4f4;
     --scrollbar-bg: transparent;
     --scrollbar-color: rgba(0, 0, 0, 0.25);
     color-scheme: light;
   }
 }
 @media (prefers-color-scheme: dark) {
-  :root:not(.light):not(.dark) {
-    --text-primary: #F4F4F4;
-    --text-inactive: #dbdbdb;
-    --text-link: #00B0F0;
-    --text-invert: #1E1E1E;
-    --background-primary: #1E1E1E;
+  :root {
+    --text-primary: #f4f4f4;
+    --text-inactive: #b4b4b4;
+    --text-link: #00b0f0;
+    --text-invert: #1e1e1e;
+    --background-primary: #1e1e1e;
     --scrollbar-bg: transparent;
     --scrollbar-color: rgba(255, 255, 255, 0.25);
     color-scheme: dark;

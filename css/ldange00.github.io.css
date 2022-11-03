@@ -55,7 +55,7 @@ p {
   letter-spacing: 0.025em;
 }
 p.sub {
-  opacity: 0.75;
+  color: var(--text-inactive);
 }
 
 a {
